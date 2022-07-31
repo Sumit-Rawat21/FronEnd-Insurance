@@ -1,1 +1,46 @@
-<p>iclaim works!</p>
+<header>
+    <div class="container" style="background-color:blue;">
+    <h2 style="color:whitesmoke;">Claim</h2>
+    </div>
+</header>
+<form>
+    <div class="container-2">
+        <div class="mb-3">
+            <input type="text" class="form-control" id="pnumber" name="pnumber" placeholder="Enter Policy Number" [(ngModel)]="claim.PolicyId" #pnumber="ngModel">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="mnumber" name="mnuber" placeholder="Enter Mobile Number" [(ngModel)]="mobile" #mnumber="ngModel">
+          </div>
+
+          <div class="col-sm-10">
+            <p>Reason To Claim Isurance</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="nd" id="nd" value="Natural Disaster" [(ngModel)]="reason" #nd="ngModel">
+              <label class="form-check-label" for="gridRadios1">
+                Natural Disaster
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="mmd" id="mmd" value="Man-Made Disaster" [(ngModel)]="reason" #mmd="ngModel">
+              <label class="form-check-label" for="gridRadios2">
+                 Man-Made Disaster
+              </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="ra" id="ra" value="Road Accident" [(ngModel)]="reason" #ra="ngModel">
+                <label class="form-check-label" for="gridRadios2">
+                  Road Accident
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="theft" id="theft" value="Theft" [(ngModel)]="reason" #theft="ngModel">
+                <label class="form-check-label" for="gridRadios2">
+                Theft
+                </label>
+              </div>
+        </div>
+        <div class="col-12" style="margin-left: 46%;">
+            <button type="submit" class="btn btn-primary" (click)="submit(claim)">Submit</button>
+          </div>
+    </div>
+</form>

@@ -10,18 +10,22 @@ import { LoginComponent } from './login/login.component';
 import { PlansComponent } from './plans/plans.component';
 import { UserComponent } from './user/user.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
-
+import { ForgetPasswordComponent } from './forget-password/forget-password.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 const routes: Routes = [
 {path:'',component:HomecomponentComponent},
 {path:'Ibuy',component:IbuyComponent},
 {path:'Irenew',component:IrenewComponent},
-{path:'Iclaim',component:IclaimComponent},
+{path:'Iclaim/:email',component:IclaimComponent},
 {path:'Icalc',component:IcalcComponent},
 {path:'login',component:LoginComponent},
-{path:'user',component:UserComponent},
-{path:'admin',component:AdminComponent},
+{path:'user/:email',component:UserComponent},
+{path:'admin/:email',component:AdminComponent},
 {path:'Ibuy/vdetails/:email',component:VehicleDetailsComponent},
-{path:'/Ibuy/vdetails/:email/:regno',component:PlansComponent}
+{path:'Ibuy/vdetails/:email/:regno',component:PlansComponent},
+{path:'forget',component:ForgetPasswordComponent},
+{path:'reset',component:ResetPasswordComponent}
+
 ];
 
 @NgModule({

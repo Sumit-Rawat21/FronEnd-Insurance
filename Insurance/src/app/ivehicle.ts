@@ -6,5 +6,5 @@ export interface Ivehicle {
     "RegistrationNumber":string,
     "EngineNumber":string,
     "ChassisNumber":string,
-    "Typeofvehicle":string
+    "TypeOfVehicle":string
 }

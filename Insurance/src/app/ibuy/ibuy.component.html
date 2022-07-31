@@ -3,32 +3,32 @@
     <h2 style="color:whitesmoke;">Register</h2>
     </div>
 </header>
-<form (ngSubmit)="saveCust()">
-    <div class="container-2">
+<form (ngSubmit)="saveCust(customer,cpass)">
+  <div class="container-2">
+  <div class="mb-3">
+      <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" [(ngModel)]="customer.name" #name="ngModel">
+    </div>
     <div class="mb-3">
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Name">
-      </div>
-      <div class="mb-3">
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Email">
-      </div>
-      <div class="mb-3">
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Date Of Birth">
-      </div>
-      <div class="mb-3">
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Contact Number">
-      </div>
-      <div class="mb-3">
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Address">
-      </div>
-      <div class="mb-3">
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter PassWord">
-      </div>
-      <div class="mb-3">
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Confirm PassWord">
-      </div>
-      <div class="col-12" style="margin-left: 46%;">
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
+      <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email" [(ngModel)]="customer.email" #email="ngModel">
+    </div>
+    <div class="mb-3">
+      <input type="date" class="form-control" id="dob" name="dob" placeholder="Enter Date Of Birth" [(ngModel)]="customer.dateOfBirth" #dob="ngModel">
+    </div>
+    <div class="mb-3">
+      <input type="text" class="form-control" id="number" name="number" placeholder="Enter Contact Number" [(ngModel)]="customer.contactNumber" #number="ngModel">
+    </div>
+    <div class="mb-3">
+      <input type="text" class="form-control" id="address" name="address" placeholder="Enter Address" [(ngModel)]="customer.address" #address="ngModel">
+    </div>
+    <div class="mb-3">
+      <input type="text" class="form-control" id="password" name="password" placeholder="Enter PassWord" [(ngModel)]="customer.password" #password="ngModel">
+    </div>
+    <div class="mb-3">
+      <input type="text" class="form-control" id="cpassword" name="cpassword" placeholder="Confirm PassWord"[(ngModel)]="cpass" #cpassword="ngModel">
+    </div>
+    <div class="col-12" style="margin-left: 46%;">
+      <button type="submit" class="btn btn-primary">Submit</button>      
+    </div>
     </div>
 
 </form>

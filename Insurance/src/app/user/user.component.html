@@ -1,19 +1,24 @@
 <div>
-<div class="container">
-    <div class="container-2">
-        <p>
-            Policy Number:#
-        </p>
-        <p>
-            Vehicle Model:#
-        </p>
-        <p>
-            Registration Number:#
-        </p>
-        <p>
-            Claim Amount: INR_______
-        </p>
-    </div>
+    <div class="container">
+        <!--  PolicyNo:number,
+    Model:string,
+    RegistrationNumber:string,
+    RenewAmount:number,
+    Email:string -->
+        <div  class="container-2" *ngFor="let dept of customer_vehicle_policy">
+            <p>
+                Policy Number:# {{dept.PolicyNo}}
+            </p>
+            <p>
+                Vehicle Model:# {{dept.Model}}
+            </p>
+            <p>
+                Registration Number:# {{dept.RegistrationNumber}}
+            </p>
+            <p>
+                Claim Amount: INR {{dept.RenewAmount}}
+            </p>
+        </div>
     <div class="container-3">
        
             <div class="next">
