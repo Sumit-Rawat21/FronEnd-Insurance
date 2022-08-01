@@ -1,0 +1,36 @@
+header{
+    color: white;
+    font-weight: bold;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    background-color:darkkhaki;
+    height: 35px;
+    width: 20%;
+    border:3px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container-2{
+    background-color: cadetblue;
+    margin-left: 35%;
+    margin-right: 35%;
+    border: 5px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.container-3{
+    margin-top: 1rem;
+}
+.mb-3{
+margin-left: 15%;
+margin-right: 15%;
+}

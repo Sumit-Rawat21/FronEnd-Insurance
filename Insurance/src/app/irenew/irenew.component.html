@@ -1,1 +1,23 @@
-<p>irenew works!</p>
+<header>
+    <div class="container" style="background-color:blue;">
+    <h2 style="color:whitesmoke;">Renew Insurance</h2>
+    </div>
+</header>
+<form (ngSubmit)="submit(policyNo,mobileNo,mail)">
+    <div class="container-2" style="margin-top: 1rem;">
+        <div class="container-3">
+        <div class="mb-3">
+            <input  type="text" class="form-control" id="pnumber" name="pnumber" placeholder="Enter Policy Number" [(ngModel)]="policyNo" #pnumber="ngModel" >
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="mnumber" name="mnumber" placeholder="Enter Mobile Number" [(ngModel)]="mobileNo" #mnumber="ngModel" >
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email" [(ngModel)]="mail" #email="ngModel"  >
+          </div>
+    <div class="col-12" style="margin-left:43%;">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+</div>
+</form>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { Iplan } from '../iplan';
 @Component({
   selector: 'app-icalc',
   templateUrl: './icalc.component.html',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IcalcComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router,private activateroute:ActivatedRoute) { }
 
-  ngOnInit(): void {
+  plandata:Iplan={
+    id:0,
+    type:'',
+    amount:0.00,
+    typeofvehicle:'',
+    term:0
+
+  }
+
+  Age:number=0
+
+  ngOnInit(): void {}
+
+  getPlanCalc(plan:Iplan){
+    this.plandata=plan
+    console.log(plan)
+    this.router.navigate(['Icalc/:typeofvehicle/:type/:duration', {typeofvehicle:this.plandata.typeofvehicle, type:this.plandata.type, duration:this.plandata.term}])  
   }
 
 }

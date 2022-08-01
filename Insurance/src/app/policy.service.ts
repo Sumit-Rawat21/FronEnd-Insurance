@@ -9,7 +9,7 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class PolicyService {
-  url='http://localhost:27523/api/Policy/'
+  url='http://localhost:5000/api/Policy/'
   httpOptions={headers:new HttpHeaders({'Content-type':'application/json'})}
     constructor(private httpclient:HttpClient) { }
     getPolicies():Observable<Policy>{

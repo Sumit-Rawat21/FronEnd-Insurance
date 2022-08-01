@@ -19,6 +19,12 @@ import { PlansComponent } from './plans/plans.component';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { PolicyComponent } from './policy/policy.component';
+import { RenewplansComponent } from './renewplans/renewplans.component';
+import { RenewpolicyComponent } from './renewpolicy/renewpolicy.component';
+
+import { IcalcShowComponent } from './icalc-show/icalc-show.component';
+//import { PlanComponent } from './plan/plan.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +41,13 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     VehicleDetailsComponent,
     PlansComponent,
     ForgetPasswordComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    PolicyComponent,
+    RenewplansComponent,
+    RenewpolicyComponent,
+    //IcalcshowComponent,
+    IcalcShowComponent,
+  //  PlanComponent
   ],
   imports: [
     BrowserModule,

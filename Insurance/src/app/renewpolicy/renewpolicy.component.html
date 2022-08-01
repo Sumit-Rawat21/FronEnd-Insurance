@@ -1,0 +1,27 @@
+<div>
+    <div class="container">
+        <div class="container-2">
+            <p>
+                Vehicle Registration Number:{{policyId}}
+            </p>
+            <p>
+                Plan Type:{{plandata.type}}
+            </p>
+            <p>
+                Plan Duration:{{plandata.term}}
+            </p>
+            <p>
+                Plan Amount: {{plandata.amount  | currency:'INR' }}
+            </p>
+            <div class="container-2">
+                <div class="next">
+                    <div><button class="btn btn-success" type="submit" (click)="addPolicyRenew()" >Make Payment</button></div>
+                </div>
+
+               <!-- <div>
+                    <button type="button" class="btn btn-primary" [routerLink]="['/Renew/:policyId']">Back</button>
+                //</div>-->
+            </div>
+
+</div>
+<!--<div><button type="button" class="btn btn-primary" [routerLink]="['/Renew/:policyId']">Back</button></div>-->

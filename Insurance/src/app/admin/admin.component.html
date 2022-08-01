@@ -11,20 +11,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>C1010</td>
-                    <td>28/07/2022</td>
-                    <td>Pending</td>
-                    <td>10000</td>
-                    <td><button type="button" class="btn btn-success">✓</button></td>
+                <tr *ngFor="let obj of cpsObj">
+                    <td>{{obj.id}}</td>
+                    <td>{{obj.claim_date | date }}</td>
+                    <td>{{!obj.isapproved?"Pending":"Approved"}}</td>
+                    <td>{{obj.renew_amount}}</td>
+                    <td><button type="button" class="btn btn-success" (click)="edit(obj.id)">✓</button></td>
                 </tr>
-                <tr>
-                    <td>C1011</td>
-                    <td>28/07/2022</td>
-                    <td>Approved</td>
-                    <td>150000</td>
-                    <td><button type="button" class="btn btn-danger">X</button></td>
-                </tr>
+                
             </tbody>
 
         </table>

@@ -1,28 +1,31 @@
-<div>
-    <div class="container">
+<div class="container-0">
+    <div class="container" *ngFor="let dept of customer_vehicle_policy">
         <!--  PolicyNo:number,
     Model:string,
     RegistrationNumber:string,
     RenewAmount:number,
     Email:string -->
-        <div  class="container-2" *ngFor="let dept of customer_vehicle_policy">
+        <div  class="container-2" >
             <p>
-                Policy Number:# {{dept.PolicyNo}}
+                Policy Number:# {{dept.policyNo}}
             </p>
             <p>
-                Vehicle Model:# {{dept.Model}}
+                Vehicle Model:# {{dept.model}}
             </p>
             <p>
-                Registration Number:# {{dept.RegistrationNumber}}
+                Registration Number:# {{dept.registrationNumber}}
             </p>
             <p>
-                Claim Amount: INR {{dept.RenewAmount}}
+                Claim Amount: INR {{dept.renewAmount}}
             </p>
         </div>
     <div class="container-3">
-       
-            <div class="next">
+            
+            <div *ngIf="dept.renewAmount>0" class="next">
                 <button class="claimb" type="submit" (click)="claim()">Claim</button>
+            </div>
+            <div *ngIf="!(dept.renewAmount>0)" class="next">
+                <div class="claimB">Claim Is Approved</div>
             </div>
             <div class="next">
                 <button class="renewb" type="submit" (click)="renew()">Renew</button>

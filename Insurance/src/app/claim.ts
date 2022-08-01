@@ -1,5 +1,5 @@
 export interface Claim {
-    Id:number,
+    //Id:number,
     ClaimDate:Date,
     Isapproved:boolean,
     PolicyId:number

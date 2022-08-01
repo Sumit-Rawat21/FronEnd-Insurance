@@ -18,7 +18,7 @@ import { CustomerService } from '../customer.service';
     this.mail=email
     this.password=pass
     if(this.mail=='admin' && this.password=='admin')
-    this.router.navigate(['admin/',this.mail]);
+    this.router.navigate(['admin']);
     else{
       
       

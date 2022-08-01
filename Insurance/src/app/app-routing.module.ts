@@ -12,20 +12,29 @@ import { UserComponent } from './user/user.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { PolicyComponent } from './policy/policy.component';
+import { RenewplansComponent } from './renewplans/renewplans.component';
+import { RenewpolicyComponent } from './renewpolicy/renewpolicy.component';
+import { IcalcShowComponent } from './icalc-show/icalc-show.component';
 const routes: Routes = [
 {path:'',component:HomecomponentComponent},
 {path:'Ibuy',component:IbuyComponent},
 {path:'Irenew',component:IrenewComponent},
-{path:'Iclaim/:email',component:IclaimComponent},
+{path:'Iclaim',component:IclaimComponent},
 {path:'Icalc',component:IcalcComponent},
+{path:'Icalc/:typeofvehicle/:type/:duration',component:IcalcShowComponent},
 {path:'login',component:LoginComponent},
 {path:'user/:email',component:UserComponent},
-{path:'admin/:email',component:AdminComponent},
+{path:'admin',component:AdminComponent},
 {path:'Ibuy/vdetails/:email',component:VehicleDetailsComponent},
 {path:'Ibuy/vdetails/:email/:regno',component:PlansComponent},
 {path:'forget',component:ForgetPasswordComponent},
-{path:'reset',component:ResetPasswordComponent}
-
+{path:'reset',component:ResetPasswordComponent},
+//{path:'Ibuy/vdetails/:email',component:VehicleDetailsComponent},
+//{path:'Ibuy/vdetails/:email/:regno',component:PlansComponent},
+{path:'Ibuy/vdetails/:email/:regno/:type/:duration',component:PolicyComponent},
+{path:'Renew/:policyId',component:RenewplansComponent},
+{path:'Renew/:policyId/:type/:duration',component:RenewpolicyComponent}
 ];
 
 @NgModule({
