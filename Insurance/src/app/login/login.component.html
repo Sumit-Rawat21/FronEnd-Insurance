@@ -1,3 +1,9 @@
+<div class="login">
+  <header>
+    <div class="text-1" style="background-color:blue;">
+      <h2 style="color:whitesmoke;">Welcome</h2>
+    </div>
+  </header>
 <form (ngSubmit)="login(mail,password)" #loginForm="ngForm">
   <div class="container">
     <div class="mb-3">
@@ -8,9 +14,11 @@
         id="email"
         name="email"
         [(ngModel)]="mail"
-        #id="ngModel"
+        #email="ngModel" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required
         placeholder="example@gmail.com"
       />
+      <div *ngIf="(email.touched || loginForm.submitted) && email.errors?.['required']" style="color:red">*Email is Required</div>
+      <div *ngIf="(email.touched || loginForm.submitted) && email.errors?.['pattern']" style="color:red">*Enter a valid Email</div>
     </div>
     <div class="mb-3">
       <label for="formGroupExampleInput2" class="form-label">Password</label>
@@ -20,12 +28,16 @@
         id="pass"
         name="pass"
         [(ngModel)]="password"
-        #id="ngModel"
+        #pass="ngModel"
+        minlength="8"
+        required
         placeholder="***********"
       />
+      <div *ngIf="(pass.touched || loginForm.submitted) && pass.errors?.['required']" style="color:red">*Password is Required</div>
+      <div *ngIf="(pass.touched || loginForm.submitted) && pass.errors?.['minlength']" style="color:red">*Invalid Password</div>
     </div>
     <div class="col-12">
-        <button type="submit" class="btn btn-primary">Log in</button>
+        <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Log in</button>
       </div>
   
   <div class="footer">
@@ -38,3 +50,4 @@
   </div>
   </div>
 </form>
+</div>

@@ -13,7 +13,7 @@ import { DatePipe } from '@angular/common';
 export class IclaimComponent implements OnInit {
   reason:string=''
   email:string=''
-  mobile:number=0
+  mobile:string=''
 
   claim:Claim={
     //Id:0,

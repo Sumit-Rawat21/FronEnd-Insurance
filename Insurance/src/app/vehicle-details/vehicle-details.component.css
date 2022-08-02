@@ -1,18 +1,34 @@
+.vehicle{
+    background-color: whitesmoke;
+    display: flex;
+   flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 10px;
+    height: 70%;
+}
+
 header{
-    color: white;
+    background-color: #191970;
     font-weight: bold;
     height: auto;
     width: auto;
     text-align: center;
 }
 .container{
-    height: 50px;
-    width: 20%;
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 43px;
+    width: 40%;
     border:3px;
     border-radius: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .col-sm-10{
+    margin-top: 0.5rem;
     margin-left: auto;
     margin-right: auto;
     display:flex;
@@ -26,9 +42,11 @@ header{
     height: 2rem;
     width: 15rem;
     border: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px 3px rgba(128,126,117,0.9);
 }
 .mb-3{
+    margin-top: 1rem;
     margin-left: 15%;
     margin-right: 15%;
 }

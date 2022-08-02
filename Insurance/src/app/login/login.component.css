@@ -1,5 +1,40 @@
+.login{
+    background-color:whitesmoke;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+    height: 55%;
+    display: flex;
+    flex-direction:column;
+}
+
+header{
+    background-color: #191970;
+    font-weight: bold;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+.text-1{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 43px;
+    width: 40%;
+    border:3px;
+    border-radius: 10px;
+    margin-left:auto;
+    margin-right: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.header .text-2{
+    display: flex;
+    margin-left: 10%;
+}
 form{
-    color: white;
+    color: black;
 }
 .col-12{
     display: flex;

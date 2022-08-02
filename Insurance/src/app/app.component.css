@@ -1,11 +1,7 @@
 
 .containerBox{
     display: flex;
- border: 5px solid black;
- border-radius: 30px;
- margin-left: 2%;
- margin-right: 2%;
- background-color: whitesmoke;
+ background-color:white;
 }
 @font-face{
     font-family: 'Edu QLD Beginner', cursive;

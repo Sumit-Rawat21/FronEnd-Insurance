@@ -1,5 +1,15 @@
+.renew{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 460px;
+    border-radius: 10px;
+}
+
 header{
-    color: white;
+    background-color: #191970;
     font-weight: bold;
     height: auto;
     width: auto;
@@ -7,11 +17,12 @@ header{
 }
 .container{
     display: flex;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     justify-content: center;
-    margin-top: 3rem;
     background-color:darkkhaki;
-    height: 35px;
-    width: 20%;
+    height: 45px;
+    width: 30%;
     border:3px;
     border-radius: 10px;
     font-weight: bold;
@@ -19,16 +30,18 @@ header{
 }
 
 .container-2{
-    background-color: cadetblue;
-    margin-left: 35%;
-    margin-right: 35%;
+    background-color: #4169E1;
+    margin-left: 25%;
+    margin-right: 25%;
     border: 5px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    height: 350px;
+    box-shadow: 10px 10px 9px 3px rgba(128,126,117,0.9);
 }
 .container-3{
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 .mb-3{
 margin-left: 15%;

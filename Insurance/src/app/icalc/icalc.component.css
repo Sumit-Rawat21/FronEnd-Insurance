@@ -1,38 +1,110 @@
+.calc{
+    background-color: whitesmoke;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction:column;
+}
+
+header{
+    background-color: #191970;
+    font-weight: bold;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
 .container{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    justify-content: space-between;
-    height: 50%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 43px;
     width: 40%;
-    border:3px solid black;
-    border-radius: 5%;
-    background-color: cadetblue;
-}
-.container .container-2{
-    margin-top: 2rem;
-    margin-left: 15%;
-    margin-right: 60%;
-    width: 80%;
-    font-family: 'Edu QLD Beginner', cursive;;
-    font-size: larger;
-    font-weight: bolder;
-    color: white;
+    border:3px;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.container .container-3{
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    margin-left: 30%;
-    margin-right: 60%;
+.container-2{
+    background-color:#C0C0C0;
     display: flex;
     justify-content: center;
-    justify-content: space-between;
+}
+p{
+    margin-top: 0.5rem;
+    color: solid black;
+    font-size: large;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
-.container .container-3 .next{
-    padding: 2rem;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: larger;
-    font-weight: bold;
+.col-sm-9{
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    justify-content:space-around;
+    
+}
+.col-sm-9 .form-check{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    color: beige;
+    height: 2rem;
+    width: 15rem;
+    border: 5px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px 3px rgba(128,126,117,0.9);
+}
+
+.col-sm-10{
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    justify-content:space-around;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+    height: 40px;
+}
+.col-sm-10 .form-check{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    color: beige;
+    height: 2rem;
+    width: 15rem;
+    border: 5px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px 3px rgba(128,126,117,0.9);
+}
+.mb-3{
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.col-sm-11{
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    justify-content:space-around;
+    
+}
+.col-sm-11 .form-check{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    color: beige;
+    margin-top: 1rem;
+    height: 2rem;
+    width: 15rem;
+    border: 5px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 9px 3px rgba(128,126,117,0.9);
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+    height: 40px;
 }

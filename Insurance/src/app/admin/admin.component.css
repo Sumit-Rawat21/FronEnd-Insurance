@@ -1,10 +1,45 @@
-h3{
+.admin{
+    background-color: whitesmoke;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction:column;
+}
+
+header{
+    background-color: #191970;
+    font-weight: bold;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 43px;
+    width: 40%;
+    border:3px;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* h3{
     background-color: blue;
     color: white;
     font-family: 'Edu QLD Beginner', cursive;;
     text-align: center;
     border: 5px;
     border-radius: 5px;
+} */
+.jumbotron{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 5px;
+    border-radius: 10px;
 }
 tbody tr:hover{
     background-color: darkcyan;

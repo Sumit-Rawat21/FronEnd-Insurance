@@ -1,8 +1,9 @@
-<header>
-    <div class="container" style="background-color:blue;">
-    <h2 style="color:whitesmoke;">Claim</h2>
+<div class="claim">
+  <header>  
+  <div class="container" style="background-color:blue;">
+    <h2 style="color:whitesmoke;">Claim Insurance</h2>
     </div>
-</header>
+  </header>
 <form>
     <div class="container-2">
         <div class="mb-3">
@@ -13,11 +14,11 @@
           </div>
 
           <div class="col-sm-10">
-            <p>Reason To Claim Isurance</p>
+            <p>Please select reason to claim inurance</p>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="nd" id="nd" value="Natural Disaster" [(ngModel)]="reason" #nd="ngModel">
               <label class="form-check-label" for="gridRadios1">
-                Natural Disaster
+                Natural Disaster    
               </label>
             </div>
             <div class="form-check">
@@ -39,8 +40,9 @@
                 </label>
               </div>
         </div>
-        <div class="col-12" style="margin-left: 46%;">
-            <button type="submit" class="btn btn-primary" (click)="submit(claim)">Submit</button>
+        <div class="col-12" style="margin-left: 48%;">
+            <button type="submit" class="btn btn-success" (click)="submit(claim)">Submit</button>
           </div>
     </div>
 </form>
+</div>

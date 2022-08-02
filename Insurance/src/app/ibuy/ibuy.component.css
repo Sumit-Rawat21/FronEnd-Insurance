@@ -1,15 +1,28 @@
+
+.registration{
+    background-color: whitesmoke;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
 header{
-    color: white;
+    background-color: #191970;
     font-weight: bold;
     height: auto;
     width: auto;
     text-align: center;
 }
 .container{
-    height: 35%;
-    width: 20%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    width: 40%;
     border:3px;
-    border-radius: 10px;
+    border-radius: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .mb-3{
@@ -19,4 +32,8 @@ header{
 .container-2{
     margin-left: 15%;
     margin-right: 15%;
+}
+
+.col-12{
+   margin-bottom: 0.2rem;
 }
